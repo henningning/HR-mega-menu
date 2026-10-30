@@ -1,0 +1,379 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "smm/mega-menu",
+  "version": "5.7.0",
+  "title": "Schlichtes Megamenü",
+  "category": "design",
+  "icon": "menu-alt3",
+  "description": "Ausgabeblock für ein natives WordPress-Menü mit Megamenü-Erweiterungen.",
+  "keywords": [
+    "Menü",
+    "Megamenü",
+    "Navigation",
+    "Block Theme"
+  ],
+  "textdomain": "schlichtes-megamenue",
+  "attributes": {
+    "navMenuId": {
+      "type": "integer",
+      "default": 0
+    },
+    "menuId": {
+      "type": "integer",
+      "default": 0
+    },
+    "navigationId": {
+      "type": "integer",
+      "default": 0
+    },
+    "syncLinkedTitles": {
+      "type": "boolean",
+      "default": true
+    },
+    "behavior": {
+      "type": "string",
+      "default": "hover"
+    },
+    "clickTarget": {
+      "type": "string",
+      "default": "arrow"
+    },
+    "openDelay": {
+      "type": "integer",
+      "default": 100
+    },
+    "closeDelay": {
+      "type": "integer",
+      "default": 240
+    },
+    "design": {
+      "type": "string",
+      "default": "plain"
+    },
+    "fontFamily": {
+      "type": "string",
+      "default": "inherit"
+    },
+    "fontSize": {
+      "type": "integer",
+      "default": 16
+    },
+    "fontWeight": {
+      "type": "integer",
+      "default": 500
+    },
+    "lineHeight": {
+      "type": "number",
+      "default": 1.35
+    },
+    "letterSpacing": {
+      "type": "number",
+      "default": 0
+    },
+    "textTransform": {
+      "type": "string",
+      "default": "none"
+    },
+    "barBackground": {
+      "type": "string",
+      "default": "#ffffff"
+    },
+    "barText": {
+      "type": "string",
+      "default": "#202124"
+    },
+    "barHoverBackground": {
+      "type": "string",
+      "default": "#f2f4f7"
+    },
+    "barHoverText": {
+      "type": "string",
+      "default": "#111827"
+    },
+    "barActiveBackground": {
+      "type": "string",
+      "default": "#eef2ff"
+    },
+    "barActiveText": {
+      "type": "string",
+      "default": "#1d4ed8"
+    },
+    "accentColor": {
+      "type": "string",
+      "default": "#1d4ed8"
+    },
+    "barPaddingX": {
+      "type": "integer",
+      "default": 16
+    },
+    "barPaddingY": {
+      "type": "integer",
+      "default": 12
+    },
+    "itemGap": {
+      "type": "integer",
+      "default": 4
+    },
+    "barRadius": {
+      "type": "integer",
+      "default": 4
+    },
+    "barBorderStyle": {
+      "type": "string",
+      "default": "none"
+    },
+    "barBorderWidth": {
+      "type": "integer",
+      "default": 0
+    },
+    "barBorderColor": {
+      "type": "string",
+      "default": "#e5e7eb"
+    },
+    "panelWidthMode": {
+      "type": "string",
+      "default": "wide"
+    },
+    "panelCustomWidth": {
+      "type": "integer",
+      "default": 1100
+    },
+    "panelAlignment": {
+      "type": "string",
+      "default": "center"
+    },
+    "edgeGutter": {
+      "type": "integer",
+      "default": 16
+    },
+    "panelOffset": {
+      "type": "integer",
+      "default": 0
+    },
+    "panelBackground": {
+      "type": "string",
+      "default": "#ffffff"
+    },
+    "panelText": {
+      "type": "string",
+      "default": "#30343b"
+    },
+    "panelHeading": {
+      "type": "string",
+      "default": "#111827"
+    },
+    "panelLinkHover": {
+      "type": "string",
+      "default": "#1d4ed8"
+    },
+    "panelBorderColor": {
+      "type": "string",
+      "default": "#e5e7eb"
+    },
+    "panelBorderWidth": {
+      "type": "integer",
+      "default": 1
+    },
+    "panelRadius": {
+      "type": "integer",
+      "default": 8
+    },
+    "panelPadding": {
+      "type": "integer",
+      "default": 28
+    },
+    "panelFontSize": {
+      "type": "integer",
+      "default": 15
+    },
+    "headingFontSize": {
+      "type": "integer",
+      "default": 16
+    },
+    "headingFontWeight": {
+      "type": "integer",
+      "default": 700
+    },
+    "columns": {
+      "type": "integer",
+      "default": 0
+    },
+    "columnMinWidth": {
+      "type": "integer",
+      "default": 190
+    },
+    "columnGap": {
+      "type": "integer",
+      "default": 30
+    },
+    "rowGap": {
+      "type": "integer",
+      "default": 24
+    },
+    "showDescriptions": {
+      "type": "boolean",
+      "default": true
+    },
+    "shadowY": {
+      "type": "integer",
+      "default": 14
+    },
+    "shadowBlur": {
+      "type": "integer",
+      "default": 35
+    },
+    "shadowOpacity": {
+      "type": "number",
+      "default": 0.14
+    },
+    "animation": {
+      "type": "string",
+      "default": "slide"
+    },
+    "animationDuration": {
+      "type": "integer",
+      "default": 180
+    },
+    "mobileBreakpoint": {
+      "type": "integer",
+      "default": 900
+    },
+    "mobileCollapsed": {
+      "type": "boolean",
+      "default": true
+    },
+    "mobileLabel": {
+      "type": "string",
+      "default": "Menü"
+    },
+    "mobileBackground": {
+      "type": "string",
+      "default": "#ffffff"
+    },
+    "mobileText": {
+      "type": "string",
+      "default": "#202124"
+    },
+    "mobilePaddingX": {
+      "type": "integer",
+      "default": 16
+    },
+    "mobilePaddingY": {
+      "type": "integer",
+      "default": 13
+    },
+    "dropdownFontFamily": {
+      "type": "string",
+      "default": "inherit"
+    },
+    "dropdownFontSize": {
+      "type": "integer",
+      "default": 15
+    },
+    "dropdownFontWeight": {
+      "type": "integer",
+      "default": 400
+    },
+    "dropdownLineHeight": {
+      "type": "number",
+      "default": 1.4
+    },
+    "dropdownLetterSpacing": {
+      "type": "number",
+      "default": 0
+    },
+    "dropdownTextTransform": {
+      "type": "string",
+      "default": "none"
+    },
+    "dropdownMinWidth": {
+      "type": "integer",
+      "default": 220
+    },
+    "dropdownPadding": {
+      "type": "integer",
+      "default": 8
+    },
+    "dropdownItemPaddingX": {
+      "type": "integer",
+      "default": 12
+    },
+    "dropdownItemPaddingY": {
+      "type": "integer",
+      "default": 10
+    },
+    "dropdownSubmenuGap": {
+      "type": "integer",
+      "default": 4
+    },
+    "dropdownBackground": {
+      "type": "string",
+      "default": "#ffffff"
+    },
+    "dropdownText": {
+      "type": "string",
+      "default": "#30343b"
+    },
+    "dropdownHoverBackground": {
+      "type": "string",
+      "default": "#f2f4f7"
+    },
+    "dropdownHoverText": {
+      "type": "string",
+      "default": "#1d4ed8"
+    },
+    "dropdownBorderColor": {
+      "type": "string",
+      "default": "#e5e7eb"
+    },
+    "dropdownBorderStyle": {
+      "type": "string",
+      "default": "solid"
+    },
+    "dropdownBorderWidth": {
+      "type": "integer",
+      "default": 1
+    },
+    "dropdownRadius": {
+      "type": "integer",
+      "default": 8
+    },
+    "dropdownShadowY": {
+      "type": "integer",
+      "default": 10
+    },
+    "dropdownShadowBlur": {
+      "type": "integer",
+      "default": 28
+    },
+    "dropdownShadowOpacity": {
+      "type": "number",
+      "default": 0.12
+    },
+    "itemModes": {
+      "type": "object",
+      "default": {}
+    },
+    "megaColumnHeadings": {
+      "type": "object",
+      "default": {}
+    },
+    "dynamicPostColumns": {
+      "type": "object",
+      "default": {}
+    }
+  },
+  "supports": {
+    "html": false,
+    "anchor": true,
+    "align": [
+      "wide",
+      "full"
+    ],
+    "spacing": {
+      "margin": true
+    },
+    "className": true
+  }
+}
