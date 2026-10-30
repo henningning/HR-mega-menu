@@ -1,6 +1,6 @@
-# Schlichtes Megamenü Block
+# Slim Megamenü Block
 
-WordPress-Plugin von Henning Rolapp. Aktuelle Version: **5.7.0**.
+WordPress-Plugin von Henning Rolapp und ChatGPT. Aktuelle Version: **5.7.0**.
 
 Native WordPress-Menüverwaltung, Megamenü-Spalten, Dropdowns, automatische Inhaltslisten und Gutenberg-Block. Unterstützt horizontale und vertikale Darstellung.
 
