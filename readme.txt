@@ -2,14 +2,17 @@
 Contributors: Henning Rolapp / OpenAI
 Requires at least: 6.5
 Requires PHP: 7.4
-Stable tag: 5.7.0
+Stable tag: 5.8.0
 License: GPLv2 or later
 
 Erweitert native WordPress-Menüs um Mega-Menüs, Dropdowns, freie Spalten, automatische Inhaltslisten und einen Gutenberg-Ausgabeblock.
 
 == Changelog ==
 
-= 5.7.0 =
+= 5.8.0 =
+* Mobiles Menü: sichtbares großes Schließen-X, globale Esc-Taste und Schließhinweis.
+
+= 5.8.0 =
 * Wählbare horizontale oder vertikale Ausrichtung pro Menü.
 * Vertikale Untermenüs klappen innerhalb der Menübreite auf; mobile Darstellung bleibt erhalten.
 
