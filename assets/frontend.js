@@ -372,6 +372,14 @@
 			});
 		}
 
+		// Capture Escape even when focus is outside the overlay or a child stops bubbling.
+		document.addEventListener('keydown', function (event) {
+			if (event.key !== 'Escape' || !isMobile() || !menu.classList.contains('is-mobile-open')) return;
+			event.preventDefault();
+			event.stopPropagation();
+			closeMobileOverlay(true);
+		}, true);
+
 		document.addEventListener('pointerdown', function (event) {
 			if (!isMobile() && current && !menu.contains(event.target)) closeItem(current, false);
 		});

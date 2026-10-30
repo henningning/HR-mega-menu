@@ -129,11 +129,13 @@ html.smm-overlay-open,body.smm-overlay-open{overflow:hidden!important;overscroll
 	text-transform:var(--smm-text-transform);
 }
 .smm-mega-menu.smm-mobile[data-smm-mobile-collapsed="1"] .smm-mobile-overlay-close{
-	dis:block;
+	display:flex;
+	align-items:center;
+	justify-content:center;
 	position:relative;
-	flex:0 0 44px;
-	width:44px;
-	height:44px;
+	flex:0 0 56px;
+	width:56px;
+	height:56px;
 	margin:0;
 	padding:0;
 	border:0;
@@ -146,8 +148,8 @@ html.smm-overlay-open,body.smm-overlay-open{overflow:hidden!important;overscroll
 	position:absolute;
 	left:50%;
 	top:50%;
-	width:24px;
-	height:2px;
+	width:32px;
+	height:3px;
 	border-radius:99px;
 	background:currentColor;
 	transform-origin:center;
@@ -227,7 +229,7 @@ html.smm-overlay-open,body.smm-overlay-open{overflow:hidden!important;overscroll
 }
 .smm-mega-menu.smm-orientation-vertical:not(.smm-mobile) .smm-toggle{
   flex-shrink:0;
-  min-width:44px;
+  min-width:56px;
 }
 .smm-mega-menu.smm-orientation-vertical:not(.smm-mobile) .smm-panel{
   position:static!important;
@@ -269,4 +271,14 @@ html.smm-overlay-open,body.smm-overlay-open{overflow:hidden!important;overscroll
 }
 .smm-mega-menu.smm-orientation-vertical:not(.smm-mobile) .smm-dropdown-caret{
   display:none;
+}
+
+/* Mobile closing hint stays below the scrollable menu. */
+.smm-mobile-close-hint{display:none}
+.smm-mega-menu.smm-mobile[data-smm-mobile-collapsed="1"] .smm-mobile-close-hint{
+ display:block;flex:0 0 auto;margin:0;
+ padding:12px max(16px,env(safe-area-inset-right,0px)) max(12px,env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));
+ font-size:13px;line-height:1.5;text-align:center;text-transform:none;letter-spacing:normal;
+ background:var(--smm-mobile-bg);color:var(--smm-mobile-text);
+ border-top:1px solid var(--smm-panel-border);
 }

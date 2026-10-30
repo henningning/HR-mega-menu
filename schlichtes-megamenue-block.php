@@ -2,7 +2,7 @@
 /**
  * Plugin Name:       Schlichtes Megamenü Block
  * Description:       Megamenü-Erweiterung für native WordPress-Menüs mit Dropdowns, Megamenü-Spalten, automatischen Inhaltslisten und Gutenberg-Ausgabeblock.
- * Version:           5.7.0
+ * Version:           5.8.0
  * Requires at least: 6.5
  * Requires PHP:      7.4
  * Author:            Henning Rolapp / OpenAI
@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 final class SMM_Modern_Mega_Menu_Block {
-	const VERSION = '5.7.0';
+	const VERSION = '5.8.0';
 	private static $instance_count = 0;
 
 	public static function init() {
@@ -1370,6 +1370,7 @@ final class SMM_Modern_Mega_Menu_Block {
 					<div class="smm-mobile-overlay-scroll"><ul id="<?php echo esc_attr( $row_id ); ?>" class="smm-menu-row">
 						<?php foreach ( $tree as $index => $item ) echo self::render_top_item( $item, $instance_id . '-' . $index, $attributes, (int) $index ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 					</ul></div>
+					<p class="smm-mobile-close-hint"><?php esc_html_e( 'Zum Schließen oben rechts auf das X klicken oder Esc drücken.', 'schlichtes-megamenue' ); ?></p>
 				</div>
 			</nav>
 		</div>

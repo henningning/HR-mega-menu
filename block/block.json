@@ -2,7 +2,7 @@
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 3,
   "name": "smm/mega-menu",
-  "version": "5.7.0",
+  "version": "5.8.0",
   "title": "Schlichtes Megamenü",
   "category": "design",
   "icon": "menu-alt3",
